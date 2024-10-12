@@ -12,14 +12,13 @@ import {
 } from "../redux/slices/prompt-response";
 import { getToken } from "../utils/token";
 
-const BASE_URL = "http://localhost:4000";
-
 export const useGetPromptResponse = (
   options: Omit<
     MutationOptions<unknown, Error, { prompts: string[] }>,
     "mutationFn" | "mutationKey"
   > = {}
 ) => {
+  const BASE_URL = import.meta.env.REACT_APP_API_URL as string;
   const dispatch = useAppDispatch();
 
   return useMutation({

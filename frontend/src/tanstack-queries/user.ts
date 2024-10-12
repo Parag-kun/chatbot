@@ -11,8 +11,7 @@ import { useClearModalDispatch } from "../redux/actions/modal";
 import { useCurrentUserSelector } from "../redux/selectors/user";
 import { useAppDispatch } from "../redux/hooks";
 import { setChats } from "../redux/slices/chat";
-
-const BASE_URL = "http://localhost:4000";
+import { BASE_URL } from "../env-vars";
 
 export const useSignup = (
   options: Omit<
