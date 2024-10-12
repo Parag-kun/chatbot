@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.apple-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.apple-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(238, 238, 238);
+}
+
+.loader {
+  transform: rotate(0deg);
+  animation: spin 1s infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
