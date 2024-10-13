@@ -10,4 +10,4 @@ This is just a demo chatbot assignment which includes basic features such as cha
 - After setting up env do ```npm run dev``` for both directories
 
 demo app link: https://stellar-squirrel-763713.netlify.app
-api link: https://chatbot-client-n8zu.onrender.com
+api link: https://chatbot-m54x.onrender.com/
